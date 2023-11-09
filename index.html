@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="weather-column" id="weather-column">
+            <h2 class="weather-title">Servicio de Meteorología</h2>
+            <!-- Termómetro y Escala de Temperatura -->
+            <div class="thermometer-container">
+                <div class="thermometer">
+                    <div class="temperature-marker" id="temperature-marker"></div>
+                </div>
+                <div class="temperature-scale">
+                    <div class="temperature-scale-item">50°C</div>
+                    <div class="temperature-scale-item">40°C</div>
+                    <div class="temperature-scale-item">30°C</div>
+                    <div class="temperature-scale-item">20°C</div>
+                    <div class="temperature-scale-item">10°C</div>
+                    <div class="temperature-scale-item">0°C</div>
+                    <div class="temperature-scale-item">-5°C</div>
+                </div>
+            </div>
+
+            <!-- Punto de Temperatura -->
+            <div class="temperature-point">
+                <p>Temperatura: 25°C</p>
+            </div>
+
+            <!-- Punto de Humedad -->
+            <div class="humidity-point">
+                <p>Humedad: 70%</p>
+            </div>
+
+            <!-- Gráfico de Barras -->
+            <div id="temperature-chart"></div>
+
+            <!-- Reloj de Presión de Aire -->
+            <div class="measurement-container" id="pressure-container">
+                <div class="label">Presión</div>
+                <div class="measurement-value" id="pressure-value">1013 hPa</div>
+            </div>
+
+            <!-- Brujula de Dirección del Aire -->
+            <div class="measurement-container" id="wind-direction-container">
+                <div class="label">Dirección del Viento</div>
+                <div class="measurement-value" id="wind-direction-value">N</div>
+            </div>
+
+            <!-- Reloj de Humedad -->
+            <div class="measurement-container" id="humidity-container">
+                <div class="label">Humedad</div>
+                <div class="measurement-value" id="humidity-value">70%</div>
+            </div>
+        </div>
+
+        <div class="transport-column" id="transport-column">
+            <h2 class="transport-title">Servicio de Transporte</h2>
+            <!-- Sección del Horario de Transporte -->
+            <!-- Horario de Autobuses -->
+            <div class="bus-schedule">
+                <p>Autobuses: 10:00 AM - 6:00 PM</p>
+            </div>
+            <!-- Horario de Trenes -->
+            <div class="train-schedule">
+                <p>Trenes: 8:00 AM - 9:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-
+
+dom.development.js"></script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
